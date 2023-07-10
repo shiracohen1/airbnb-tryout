@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import Woman from "./images/woman.svg"
 import './App.css';
 import Card from './components/card'
 import Navbar from './components/navbar'
@@ -10,7 +10,14 @@ function App() {
       <header className="App-header">
         <Navbar />
         <Hero />
-        <Card />
+        <Card
+          img={ Woman }
+          rating="5.0"
+          reviewCount={6}
+          location="USA"
+          title="Life Lessons with Katie Zaferes"
+          price={136}
+        />
       </header>
     </div>
   );
