@@ -51,22 +51,29 @@ nav {
 
 .card {
   width: 20vh;
+  margin-left: 2.5vw;
   display: flex;
+  position: relative;
   flex-direction: column;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   margin-top: 3vh;
 }
 
 .card--image {
   width: 100%;
+  height: 50%;
   border-radius: 1vw;
 }
 
 .card--stats {
   display: flex;
   align-items: center;
-  width: 12vw;
+  width: 11vw;
   justify-content: space-around;
+}
+
+.gray {
+  color: gray
 }
 
 .card--star {
@@ -77,3 +84,21 @@ nav {
   font-weight: bold;
 }
 
+.cards-list {
+  display: flex;
+  height: 60vh;
+  flex-direction: row;
+  overflow-x: scroll;
+  justify-content: flex-start;
+}
+
+.card--badge {
+  position: absolute;
+    top: 1vh;
+    left: 0.75vh;
+    background-color: white;
+    padding: 0.5vh 0.75vw;
+    font-size: smaller;
+    border-radius: 0.35vh;
+    font-weight: bold;
+}
